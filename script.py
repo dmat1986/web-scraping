@@ -57,7 +57,7 @@ def Winnipeg_schools() -> None:
         for a in soup.select("tbody td:nth-child(2) a")
     ]
 
-    df.to_csv("LocalLogic.tsv", sep = "\t",index=False)
+    df.to_csv("output.tsv", sep = "\t",index=False)
 
 if __name__ == '__main__':
     Winnipeg_schools()
